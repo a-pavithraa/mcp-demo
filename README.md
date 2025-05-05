@@ -26,10 +26,10 @@ The AI will use the appropriate MCP tool to fetch the requested information dire
 ## How to run
 
 ```bash
-git clone https://github.com/apavithraa/mcp-sample
-cd mcp-sample
+git clone https://github.com/apavithraa/mcp-demo
+cd mcp-demo
 
-go build -o sample main.go
+go build -o awstools main.go
 ```
 
 Configure the MCP server:
@@ -43,7 +43,7 @@ MCP_JSON_CONTENT=$(cat <<EOF
   "servers": {
     "AWS Services MCP": {
       "type": "stdio",
-      "command": "$(pwd)/sample"
+      "command": "$(pwd)/awstools"
     }
   }
 }
@@ -66,4 +66,4 @@ You are good to go! Now spin up VS Code Insiders in Agent Mode, or any other MCP
 
 ## Local dev/testing
 
-Start with [MCP inspector](https://modelcontextprotocol.io/docs/tools/inspector) - `npx @modelcontextprotocol/inspector ./pills`
+Start with [MCP inspector](https://modelcontextprotocol.io/docs/tools/inspector) - `npx @modelcontextprotocol/inspector ./awstools`
