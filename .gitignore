@@ -1,0 +1,37 @@
+# Go specific ignores
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Output directories
+/bin/
+/pkg/
+
+# Dependency directories
+/vendor/
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor and IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Debug files
+debug
+*.log
+
+# Environment files
+.env
+.env.local
