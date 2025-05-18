@@ -10,7 +10,7 @@ import (
 func main() {
 
 	s := server.NewMCPServer(
-		"Azure Cosmos DB MCP server 🚀",
+		"AWS MCP server 🚀",
 		"0.0.5",
 		server.WithLogging(),
 	)
